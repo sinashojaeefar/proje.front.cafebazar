@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F9FAFD;
+}
+
+.navbar {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.navbar .img-logo {
+  width: 100px;
+}
+
+.navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .searchbox {
+  width: 250px;
+}
+
+#app-box {
+  overflow-y: visible;
+  overflow-x: auto;
+  white-space: nowrap;
+  vertical-align: text-top;
+  margin: 0;
+  padding: 0;
+  border-spacing: 5px;
+}
+
+.card {
+  background-color: #F9FAFD;
+}
+
+.card img {
+  border-radius: 20px;
+}
+
+.card :hover {
+  background-color: #FFFFFF;
+  border-radius: 0.7rem;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.item {
+  display: table-cell;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+  min-width: 150px;
+  width: 150px;
+  line-height: 1.2;
+  vertical-align: top;
+  text-align: center;
+  font-family: Sahel, Tahoma;
+}
+
+.item-vitrin {
+  display: table-cell;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+  min-width: 400px;
+  width: 400px;
+}
+
+.category {
+  background: #eeeeee;
+}
+
+.category-item {
+  background: #eeeeee;
+  color: #000;
+  border-radius: 0.6rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  background: #FFFFFF;
+  opacity: 1;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #F9FAFD;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  margin-top: 30px;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-link a:hover {
+  color: #0DA05B;
+}
+
+.nav-item {
+  font-size: 1.4rem;
+  font-family: Sahel, Tahoma;
+}
+
+.box-body {
+  font-size: 1.2rem;
+  font-family: Sahel, Tahoma;
+  border-radius: 7px;
+}
+
+.more {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.more:hover {
+  color: #0DA05B;
+}
+/*# sourceMappingURL=main.css.map */

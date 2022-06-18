@@ -1,0 +1,31 @@
+$color-primary : #FFFFFF;
+$color-secondary : #F9FAFD;
+$color-green : #0DA05B;
+$color-black : #000;
+$color-gray : #eeeeee;
+
+$font-sahel: Sahel, Tahoma;
+
+@font-face {
+    font-family: Sahel;
+    
+    src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+    
+    font-weight: normal;
+}
+
+@mixin items {
+    display: table-cell;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $color-secondary;
+}

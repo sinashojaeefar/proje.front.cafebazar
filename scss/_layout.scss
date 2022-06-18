@@ -1,0 +1,115 @@
+.navbar {
+    position: relative;
+    background-color: $color-primary;
+
+    .img-logo {
+        width: 100px;
+    }
+
+    &-nav {
+        align-items: center;
+    }
+
+    .searchbox {
+        // margin-right: 90px;
+        width: 250px;
+    }
+}
+
+
+#app-box {
+    overflow-y: visible;
+    overflow-x: auto;
+    white-space: nowrap;
+    vertical-align: text-top;
+    margin: 0;
+    padding: 0;
+    border-spacing: 5px;
+}
+.card {
+    background-color: $color-secondary;
+
+    & img {
+        border-radius: 20px;
+    }
+    & :hover {
+        background-color: $color-primary;
+        border-radius: 0.7rem;
+        opacity: 1;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+
+    }
+}
+.item {
+    @include items;
+    min-width: 150px;
+    width: 150px;
+    line-height: 1.2;
+    vertical-align: top;
+    text-align: center;
+    font-family: $font-sahel;
+}
+
+.item-vitrin {
+    @include items;
+    min-width: 400px;
+    width: 400px;
+}
+
+.category {
+    background: $color-gray;
+
+    &-item {
+        background: $color-gray;
+        color: $color-black;
+        border-radius: 0.6rem;
+        opacity: 0.6;
+        cursor: pointer;
+          
+    &:hover {
+    background: $color-primary;
+    opacity: 1;
+    }
+       
+    }
+
+    &-icon {
+        font-size: 1.5rem;
+        cursor: pointer;  
+      }
+      
+  }
+
+
+  .collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+    &-content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: $color-secondary;
+      }
+  }
+  
+  
+  .footer {
+    background-color: $color-primary;
+    margin-top: 30px;
+
+    &-link a{
+        text-decoration: none;
+        color: $color-black;
+
+        &:hover {
+            color: $color-green;
+        }
+    }
+  }
