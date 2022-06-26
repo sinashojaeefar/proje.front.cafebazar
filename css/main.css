@@ -32,53 +32,51 @@ body {
   width: 250px;
 }
 
-#app-box {
-  overflow-y: visible;
+.wrapper {
+  min-height: 200px;
+  border: 1px solid #ddd;
   overflow-x: auto;
-  white-space: nowrap;
-  vertical-align: text-top;
-  margin: 0;
-  padding: 0;
-  border-spacing: 5px;
+  overflow-y: hidden;
 }
 
-.card {
-  background-color: #F9FAFD;
-}
-
-.card img {
-  border-radius: 20px;
-}
-
-.card :hover {
-  background-color: #FFFFFF;
-  border-radius: 0.7rem;
-  opacity: 1;
-  cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.item {
+.wrapper .items {
   display: table-cell;
   border-radius: 5px;
   margin: 5px;
-  padding: 2px;
   min-width: 150px;
   width: 150px;
-  line-height: 1.2;
+  line-height: 1;
   vertical-align: top;
   text-align: center;
   font-family: Sahel, Tahoma;
 }
 
-.item-vitrin {
+.wrapper .items:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.wrapper img {
+  border-radius: 20px;
+  width: 100px;
+}
+
+.wrapper .item-vitrin {
   display: table-cell;
   border-radius: 5px;
   margin: 5px;
-  padding: 2px;
   min-width: 400px;
   width: 400px;
+}
+
+.wrapper .item-vitrin img {
+  border-radius: 20px;
+  width: 400px;
+  margin-bottom: 5px;
+}
+
+.wrapper .item-vitrin img:hover {
+  cursor: pointer;
 }
 
 .category {

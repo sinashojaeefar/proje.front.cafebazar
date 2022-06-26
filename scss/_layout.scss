@@ -17,45 +17,50 @@
 }
 
 
-#app-box {
-    overflow-y: visible;
+.wrapper {
+    min-height: 200px;
+    border: 1px solid #ddd;
     overflow-x: auto;
-    white-space: nowrap;
-    vertical-align: text-top;
-    margin: 0;
-    padding: 0;
-    border-spacing: 5px;
-}
-.card {
-    background-color: $color-secondary;
+    overflow-y: hidden;
 
+    & .items {
+        @include items;
+        min-width: 150px;
+        width: 150px;
+        line-height: 1;
+        vertical-align: top;
+        text-align: center;
+        font-family: $font-sahel;
+        
+        &:hover {
+            background-color: $color-primary;
+            cursor: pointer;
+        }
+    }
     & img {
         border-radius: 20px;
+        width: 100px;
     }
-    & :hover {
-        background-color: $color-primary;
-        border-radius: 0.7rem;
-        opacity: 1;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
 
+    & .item-vitrin {
+        @include items;
+        min-width: 400px;
+        width: 400px;
+
+        & img {
+            border-radius: 20px;
+            width: 400px;
+            margin-bottom: 5px;
+
+            &:hover {
+                cursor: pointer;
+            }
+    
+        } 
     }
-}
-.item {
-    @include items;
-    min-width: 150px;
-    width: 150px;
-    line-height: 1.2;
-    vertical-align: top;
-    text-align: center;
-    font-family: $font-sahel;
+
 }
 
-.item-vitrin {
-    @include items;
-    min-width: 400px;
-    width: 400px;
-}
 
 .category {
     background: $color-gray;
